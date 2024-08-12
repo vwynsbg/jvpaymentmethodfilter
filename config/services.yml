@@ -1,0 +1,6 @@
+services:
+  PrestaShop\Module\PaymentMethodFilter\Admin\PaymentMethodFilterController:
+    arguments:
+      - '@doctrine.orm.entity_manager'
+    tags:
+      - { name: controller.service_arguments }
