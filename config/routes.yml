@@ -1,0 +1,4 @@
+admin_paymentmethodfilter_settings:
+  path: /admin/paymentmethodfilter
+  controller: PrestaShop\Module\PaymentMethodFilter\Admin\PaymentMethodFilterController::settings
+  methods: [GET, POST]
