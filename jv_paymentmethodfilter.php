@@ -35,7 +35,7 @@ class Jv_PaymentMethodFilter extends PaymentModule
 		parent::__construct();
 
 		$this->displayName = $this->trans('JV Payment Method Filter', [], 'Modules.Paymentmethodfilter.Admin');
-		$this->description = $this->l('Filter Payment methods based on cart amount', [], 'Modules.Paymentmethodfilter.Admin');
+		$this->description = $this->trans('Filter Payment methods based on cart amount', [], 'Modules.Paymentmethodfilter.Admin');
 
 		$this->controllers = ['admin', 'hook'];
 
