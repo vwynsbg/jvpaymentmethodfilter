@@ -1,0 +1,17 @@
+{% extends 'PrestaShopBundle:Admin:layout.html.twig' %}
+
+{% block content %}
+	<h1>{{ 'Payment Filter Settings'|trans({}, 'Modules.PaymentMethodFilter.Admin') }}</h1>
+
+	{{ form_start(form) }}
+	{{ form_widget(form) }}
+	<button type="submit" class="btn btn-primary">{{ 'Save'|trans({}, 'Admin.Actions') }}</button>
+	{{ form_end(form) }}
+
+	<h2>{{ 'Existing Configurations'|trans({}, 'Modules.PaymentMethodFilter.Admin') }}</h2>
+	<ul>
+		{% for config in configs %}
+			<li>{{ config.paymentOption }}: {{ config.minTotal }} - {{ config.maxTotal }}</li>
+		{% endfor %}
+	</ul>
+{% endblock %}
