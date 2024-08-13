@@ -8,7 +8,7 @@ use PrestaShop\Module\PaymentMethodFilter\Entity\PaymentMethodFilterConfig;
 use PrestaShop\Module\PaymentMethodFilter\Form\PaymentMethodFilterConfigType;
 use Doctrine\ORM\EntityManagerInterface;
 use PrestaShopBundle\Controller\Admin\FrameworkBundleAdminController;
-use symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
