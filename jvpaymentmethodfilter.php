@@ -1,27 +1,18 @@
 <?php
-/**
- * MODULE jv_paymentmethodfilter
- *
- * @author  VWYNSBG
- * @copyright   Copyright (c) 2024 VWYNSBG
- * @license Proprietary - no redistribution without authorization
- **/
 
-declare(strict_types=1);
-
-if (file_exists(__DIR__ . '/vendor/autoload.php')) {
-    require_once __DIR__ . '/vendor/autoload.php';
+if (!defined('_PS_VERSION_')) {
+	exit;
 }
 
+use Symfony\Component\Yaml\Yaml;
 use PrestaShop\PrestaShop\Adapter\SymfonyContainer;
-use PrestaShop\Module\PaymentMethodFilter\Entity\PaymentMethodFilterConfig;
-use PrestaShop\PrestaShop\Core\Payment\PaymentOption;
+use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
-class Jv_PaymentMethodFilter extends PaymentModule
+class Jvpaymentmethodfilter extends PaymentModule
 {
 	public function __construct()
 	{
-		$this->name = 'jv_paymentmethodfilter';
+		$this->name = 'jvpaymentmethodfilter';
 		$this->tab = 'payments_gateways';
 		$this->version = '1.0.0';
 		$this->author = 'Jeremy Vanwynsberghe';
