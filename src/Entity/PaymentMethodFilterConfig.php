@@ -7,7 +7,7 @@ namespace PrestaShop\Module\PaymentMethodFilter\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="PaymentMethodFilter\Repository\PaymentMethodFilterConfigRepository")
+ * @ORM\Entity(repositoryClass="PrestaShop\Module\PaymentMethodFilter\Repository\PaymentMethodFilterConfigRepository")
  * @ORM\Table(name="ps_paymentmethodfilter_config")
  */
 class PaymentMethodFilterConfig

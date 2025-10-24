@@ -39,7 +39,7 @@ class PaymentMethodFilterController extends FrameworkBundleAdminController
 			}
 		}
 
-		return $this->render('@Modules/jv_paymentmethodfilter/views/templates/admin/settings.twig', [
+		return $this->render('@Modules/jv_paymentmethodfilter/views/templates/admin/settings.html.twig', [
 			'form' => $form->createView(),
 			'configs' => $configs,
 		]);
